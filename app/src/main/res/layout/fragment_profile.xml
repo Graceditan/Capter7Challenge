@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/purple_200"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Profile"
+        android:textStyle="bold"
+        android:textSize="40sp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+    <ImageView
+        android:id="@+id/viewImage"
+        android:layout_gravity="center"
+        android:layout_width="80dp"
+        android:layout_height="80dp"/>
+    <Button
+        android:id="@+id/btn_pick"
+        android:layout_gravity="center"
+        android:text="add"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textSize="20sp"
+            android:hint="Username"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/updateUsername"
+            android:layout_width="300dp"
+            android:layout_height="60dp">
+        </EditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textSize="20sp"
+            android:hint="Nama Lengkap"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/updateNama"
+            android:layout_width="300dp"
+            android:layout_height="60dp">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_gravity="center_horizontal"
+        app:passwordToggleEnabled="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textSize="20sp"
+            android:hint="Tanggal Lahir"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/updateTgl"
+           android:layout_width="300dp"
+            android:layout_height="60dp">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_gravity="center_horizontal"
+        app:passwordToggleEnabled="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textSize="20sp"
+            android:hint="Alamat"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/updateAlamat"
+               android:layout_width="300dp"
+            android:layout_height="60dp">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnupdate"
+        android:text="Update"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+    <Button
+        android:id="@+id/btnlogout"
+        android:text="Logout"
+        android:layout_marginTop="10dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</LinearLayout>

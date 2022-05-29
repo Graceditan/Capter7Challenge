@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200">
+
+    <RelativeLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+
+
+        <TextView
+            android:text="Username"
+            android:id="@+id/tvfavusername"
+            android:textSize="20sp"
+            android:layout_marginStart="20dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+        </TextView>
+
+
+        <ImageView
+            android:id="@+id/profilefav"
+            android:src="@drawable/ic_person"
+            android:layout_alignParentEnd="true"
+            android:layout_marginEnd="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/home"
+            android:src="@drawable/ic_home"
+            android:layout_toLeftOf="@+id/profilefav"
+            android:layout_marginEnd="20dp"
+            android:layout_width="30dp"
+            android:layout_height="30dp">
+
+
+        </ImageView>
+
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:layout_marginTop="10dp"
+        android:text="Favorite"
+        android:textSize="20sp"
+        android:textColor="@color/black"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+    </TextView>
+
+
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/rcfav"
+                android:layout_width="match_parent"
+                android:layout_height="450dp"
+
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp">
+
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+            <TextView
+
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:layout_centerInParent="true"
+                android:id="@+id/checkdatafav"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                >
+
+            </TextView>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

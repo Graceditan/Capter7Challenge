@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_gravity="center_horizontal"
+        android:text="Register"
+        android:textSize="40sp"
+        android:textStyle="bold"
+        android:layout_marginBottom="30dp"
+        android:textColor="@color/black"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textSize="20sp"
+            android:hint="Username"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/regisusername"
+            android:layout_width="300dp"
+            android:layout_height="60dp">
+        </EditText>
+
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_gravity="center_horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textSize="20sp"
+            android:hint="Email"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/regisemail"
+            android:layout_width="300dp"
+            android:layout_height="60dp">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_gravity="center_horizontal"
+        app:passwordToggleEnabled="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+        <EditText
+            android:textSize="20sp"
+            android:hint="Password"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/regispassword"
+            android:layout_width="300dp"
+            android:layout_height="60dp">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_gravity="center_horizontal"
+        app:passwordToggleEnabled="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <EditText
+            android:textSize="20sp"
+            android:hint="Konfirmasi Password"
+            android:layout_marginTop="30dp"
+            android:layout_gravity="center_horizontal"
+            android:id="@+id/confirmpassword"
+            android:layout_width="300dp"
+            android:layout_height="60dp">
+
+        </EditText>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <Button
+        android:id="@+id/btnregis"
+        android:text="Register"
+        android:layout_marginTop="40dp"
+        android:layout_gravity="center_horizontal"
+        android:layout_width="300dp"
+        android:layout_height="wrap_content">
+
+    </Button>
+
+</LinearLayout>

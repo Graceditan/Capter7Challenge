@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical"
+    android:background="@color/purple_200"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:layout_margin="20dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+
+                android:layout_marginBottom="50dp"
+                android:gravity="center_horizontal">
+
+                <TextView
+                    android:layout_marginTop="30dp"
+                    android:layout_gravity="center_horizontal"
+                    android:text="Judul"
+                    android:id="@+id/textjuduldetail"
+                    android:textSize="22sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <ImageView
+                    android:id="@+id/gambar1"
+                    android:layout_marginTop="20sp"
+                    android:layout_gravity="center_horizontal"
+                    android:src="@mipmap/ic_launcher"
+                    android:layout_width="140dp"
+                    android:layout_height="140dp">
+
+                </ImageView>
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="Author"
+                    android:id="@+id/textauthor"
+                    android:textSize="22sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:text="CreatedAt"
+                    android:id="@+id/textcreated"
+                    android:textSize="22sp"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content">
+
+                </TextView>
+                <TextView
+
+                    android:id="@+id/textdesc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:text="Description"
+                    android:textSize="22sp">
+
+                </TextView>
+
+
+
+
+            </LinearLayout>
+        </ScrollView>
+
+
+        <com.google.android.material.floatingactionbutton.FloatingActionButton
+            android:id="@+id/btnfavorite"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginBottom="40dp"
+            android:src="@drawable/ic_fav"
+            app:fabCustomSize="80dp"
+            app:maxImageSize="35dp"
+            app:tint="@null"></com.google.android.material.floatingactionbutton.FloatingActionButton>
+
+
+    </RelativeLayout>
+
+</LinearLayout>

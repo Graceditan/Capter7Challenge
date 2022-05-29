@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="#E36992">
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cardv"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="5dp"
+        android:layout_height="90dp">
+
+        <RelativeLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+
+                android:layout_margin="20dp"
+
+                android:src="@mipmap/ic_launcher"
+                android:id="@+id/gambarfav"
+                android:layout_width="60dp"
+                android:layout_height="60dp">
+
+            </ImageView>
+            <TextView
+                android:layout_toRightOf="@id/gambarfav"
+                android:text="ssssssssssss"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                android:id="@+id/textjudulfav"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_toRightOf="@id/gambarfav"
+                android:layout_below="@id/textjudulfav"
+                android:text="ssssssssssss"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:id="@+id/textdirecfav"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content">
+
+            </TextView>
+
+            <TextView
+                android:layout_toRightOf="@id/gambarfav"
+                android:layout_below="@id/textdirecfav"
+                android:text="ssssssssssssss"
+                android:textSize="18sp"
+                android:textColor="@color/black"
+                android:id="@+id/textreleasefav"
+                android:layout_width="280dp"
+                android:layout_height="55dp">
+
+            </TextView>
+
+        </RelativeLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
